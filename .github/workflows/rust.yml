@@ -25,8 +25,9 @@ jobs:
           - ubuntu-latest
 
     steps:
-    - name: Download deps
+    - name: Checkout
       uses: actions/checkout@v2
+    - name: Build
       shell: bash
       run: |
         if [[ ${RUNNER_OS} == "Linux" ]]; then
@@ -36,7 +37,7 @@ jobs:
                 ninja-build libglu1-mesa-dev
         fi > /dev/null
         cargo build --quiet
-    - name: Archive production artifacts
+    - name: Archive
       uses: actions/upload-artifact@v4
       with:
         retention-days: 1
