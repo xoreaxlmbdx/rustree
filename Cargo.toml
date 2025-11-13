@@ -3,8 +3,8 @@ name = "rustree"
 version = "0.1.0"
 edition = "2021"
 description = "Rustree is a notepad that stores text (in HTML format) in a hierarchical structure."
-homepage = "https://github.com/zalupa35/rustree"
-repository = "https://github.com/zalupa35/rustree"
+homepage = "https://github.com/xoreaxlmbdx/rustree"
+repository = "https://github.com/xoreaxlmbdx/rustree"
 license = "MIT"
 
 [profile.release]
